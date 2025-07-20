@@ -74,7 +74,7 @@ body {
 }
 
 .journey {
-    width: 50%;
+    max-width: 50%;
 }
 
 .journey-title {
@@ -83,10 +83,23 @@ body {
 }
 
 .camera-image {
+    background-image: url(../assets/images/Circle\ design.svg);
     width: 100%;
 }
 
+/* Shop Icons */
 
+.icons{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
 @media screen and (max-width:576px) {
 
@@ -119,7 +132,7 @@ body {
         text-align: center;
     }
     .camera-image {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
