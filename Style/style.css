@@ -89,17 +89,112 @@ body {
 
 /* Shop Icons */
 
-.icons{
+.icons {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-content: space-between;
-    justify-content: center;
     align-items: center;
     margin-top: 130px;
     padding: 10px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
+
+
+/* Popular Collection */
+
+.section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.popular-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.popular-item {
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.doller-money {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.popular-item .image-item {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.discription {
+    color: rgb(120, 120, 133);
+    font-weight: 700;
+    margin: 0;
+}
+
+.see-more {
+    color: rgba(224, 44, 109, 0.90);
+    text-align: right;
+    border: none;
+    margin-top: 25px;
+}
+
+
+/* Feature Section */
+
+.feature-container {
+    max-width: 1280px;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.feature {
+    max-width: 50%;
+}
+
+.feature-title {
+    font-size: 3.25rem;
+    margin: 0;
+}
+
+.feature-image {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px) {
 
@@ -128,11 +223,29 @@ body {
         gap: 40px;
         justify-content: center;
     }
-    .journey-title, .journey-description{
+
+    .journey-title,
+    .journey-description {
         text-align: center;
     }
+
     .camera-image {
         max-width: 100%;
+    }
+
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+
+    .popular-items-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
     }
 }
 
@@ -143,5 +256,16 @@ body {
         gap: 17px;
     }
 
-    
+    .icons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .popular-items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature-container{
+        flex-direction: column;
+        text-align: center;
+    }
 }
